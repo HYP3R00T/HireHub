@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "hirehub"
+version = "0.1.0"
+description = ""
+authors = ["hyperoot <hyperoot.tech@proton.me>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+streamlit = "^1.38.0"
+poethepoet = "^0.28.0"
+pydantic = "^2.8.2"
+sqlalchemy = "^2.0.34"
+graphviz = "^0.20.3"
+pydot = "^3.0.1"
+
+[tool.poe.tasks]
+run = "streamlit run hirehub/Home.py"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
